@@ -5,15 +5,15 @@ from waitress  import serve
 import os
 print("Current working directory:", os.getcwd())
 app = Flask(__name__)
-model = pickle.load(open(r'C:\inetpub\wwwroot\models\life_Insures_classifier_model.pkl', 'rb'))
+model = pickle.load(open('life_Insures_classifier_model.pkl', 'rb'))
 @app.route('/')
 def home():
     return render_template("index.html")
 
 @app.route('/predict',methods=['POST'])
 def predict():
-    sample = pd.read_csv(r'C:\inetpub\wwwroot\models\sample.csv')
-    sample.columns = [ 'f' , 'v']
+    sample = pd.read_csv('sample.csv')
+    sample.columns = [ 'f', 'v']
     selected_f = ['Product_Info_1', 'Product_Info_2', 'Product_Info_4', 'Ins_Age', 'Wt',
                              'BMI', 'Employment_Info_2', 'Employment_Info_4', 'InsuredInfo_1',
                              'InsuredInfo_2', 'InsuredInfo_5', 'InsuredInfo_6', 'InsuredInfo_7',
