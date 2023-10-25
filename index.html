@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>KaggleX Project</title>
+</head>
+<body>
+<font color="purple">
+<h1><center>Streamlining Life Insurance Applications 
+  with Predictive Modeling</h1></center>
+<hr>
+<pre>
+  <font color="blue"><b>Objective:</b><br>
+  Predict the insurance risk level for each customer
+  based on his/her data.
+  </font>
+</pre>
+
+<form method="post" action="{{url_for('predict')}}"> 
+
+<h6>Upload a CSV file: <input type="Text fields" name="url" size="100"></h6>
+
+<b><input type="submit" value="Predict"></b>
+</form>
+</font>
+<h2>
+<font color="darkgreen"><b>Predicted level is:</b></font>
+<br><br>
+<p>{{ prediction }}</p>
+</h2>
+
+</body>
+</html>
