@@ -1,32 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
-   <title>KaggleX Project</title>
+   <title>KaggleX Project Showcase</title>
 </head>
 <body>
-<font color="purple">
-<h1><center>Streamlining Life Insurance Applications 
-  with Predictive Modeling</h1></center>
-<hr>
-<pre>
-  <font color="blue"><b>Objective:</b><br>
-  Predict the insurance risk level for each customer
-  based on his/her data.
-  </font>
-</pre>
+    <!-- Image -->
+    <img src="Picture1.jpg" alt="Project Image" style="max-width: 100%; height: auto;">
+    <div style="text-align: center;">
+        <h1 style="color: rgb(41, 12, 204);">Streamlining Life Insurance Applications with Predictive Modeling</h1>
+        <hr>
+        <div style="text-align: left; color: rgb(0, 0, 0);">
+            <h3><b>Objective:</b></h3>
+            <p>Our goal is to provide an accurate prediction of the Insurance Risk Classification based on the data you provide. 
+                The risk classification ranges from 1 (Low risk) to 8 (High risk).</p>
+        </div>
 
-<form method="post" action="{{url_for('predict')}}"> 
+        <form method="post" action="{{ url_for('predict') }}">
+            <h4>Upload a CSV File:</h4>
+            <p>Choose a CSV file that contains the necessary data for insurance risk prediction.</p>
+            <p>The data should include relevant features such as age, weight, and medical history.</p>
+            <p>For this example we have a sample file containing these features</p>
+            <input type="file" name="file" accept=".csv" style="width: 100%;">
+            <br><br>
+            <input type="submit" value="Predict" style="background-color: rgba(71, 235, 42, 0.886); color: black; padding: 10px;">
+        </form>
 
-<h6>Upload a CSV file: <input type="Text fields" name="url" size="100"></h6>
-
-<b><input type="submit" value="Predict"></b>
-</form>
-</font>
-<h2>
-<font color="darkgreen"><b>Predicted level is:</b></font>
-<br><br>
-<p>{{ prediction }}</p>
-</h2>
-
+        <h2 style="color: darkgreen;">Predict Insurance Risk Classification:</h2>
+        <p>{{ prediction }}</p>
+    </div>
 </body>
 </html>
