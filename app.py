@@ -5,7 +5,7 @@ from flask import Flask, render_template, request
 from waitress import serve
 current_directory = os.getcwd()
 print(f'Current Working Directory: {current_directory}')
-app = Flask(__name__, static_url_path='/static', static_folder='static')
+app = Flask(__name__)
 model = pickle.load(open('life_insurance_classifier_model.pkl', 'rb'))
 
 @app.route('/')
