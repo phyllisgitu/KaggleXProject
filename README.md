@@ -16,10 +16,10 @@ Before you can run this application, you'll need to have the following installed
 
 Clone this repository to your local machine.
    ```bash
-- git clone https://github.com/phyllisgitu/KaggleXProject.git
-- cd KaggleXProject
-- pip install -r requirements.txt
-- python app.py
+git clone https://github.com/phyllisgitu/KaggleXProject.git
+3. cd KaggleXProject
+4. pip install -r requirements.txt
+5. python app.py
 
 Then, you can access the web application at
    http://127.0.0.1:8080/
