@@ -13,14 +13,14 @@ Before you can run this application, you'll need to have the following installed
 - Jupyter Notebook (optional but recommended for exploring the model)
 
 ## Getting Started
-
-1. Clone this repository to your local machine.
+Clone this repository to your local machine.
    ```bash
-   git clone https://github.com/phyllisgitu/KaggleXProject.git
-3. cd KaggleXProject
-4. pip install -r requirements.txt
-5. Run python app.py
-6. Then, you can access the web application at
+git clone https://github.com/phyllisgitu/KaggleXProject.git
+cd KaggleXProject
+pip install -r requirements.txt
+python app.py
+
+Then, you can access the web application at
    http://127.0.0.1:8080/
 
 ## Project Structure
