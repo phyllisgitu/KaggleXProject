@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>KaggleX Project Showcase</title>
+   <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="content">
+        <h1 style="color: rgb(6, 6, 6); font-size: 40px;">Streamlining Life Insurance Applications with Predictive Modeling</h1>
+        <hr>
+        <div style="text-align: left; color: rgb(35, 94, 12); font-size: 28px;">
+            <h4><b>Objective:</b></h4>
+            <h4 style="font-size: 24px;">Our goal is to provide an accurate prediction of the Insurance Risk Classification based on the data you provide.</h4>
+        </div>
+        <form method="post" action="{{ url_for('predict') }}" enctype="multipart/form-data">
+            <h4 style="font-size: 20px;">Upload a CSV File:</h4>
+            <p style="font-size: 18px;">Choose a CSV file that contains the necessary data for insurance risk prediction. 
+                The data should include relevant features such as age, weight, and medical history.</p>
+            <input type="file" name="file" accept=".csv" style="width: 100%; font-size: 18px; ">
+            <input type="submit" value="Upload and Predict"  style="background-color: rgb(147, 8, 59); color: rgb(248, 245, 245); padding: 20px; font-size: 24px;">
+        </form>
+        <h2 style="color: rgb(147, 8, 59); font-size: 28px;">Risk classification ranges from 1 (Low risk) to 8 (High risk).</h2>
+        <p style="font-size: 36px; color: rgb(11, 11, 11);">{{ prediction }}</p>
+    </div>
+</body>
+</html>
