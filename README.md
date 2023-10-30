@@ -23,12 +23,13 @@ Before you can run this application, you'll need to have the following installed
 6. Then, you can access the web application at
    http://127.0.0.1:8080/
 
-Project Structure
-sample.csv/: This file contains sample csv data.
-life_insurance_classifier_model.pkl/: This file stores the trained XGBoost model.
-app.py: Python script for making predictions using the trained model.
-requirements.txt: List of Python packages required for this project.
-templates: Stores the html file.
+## Project Structure
+- sample.csv/: This file contains sample csv data.
+- life_insurance_classifier_model.pkl/: This file stores the trained XGBoost model.
+- app.py: Python script for making predictions using the trained model.
+- requirements.txt: List of Python packages required for this project.
+- templates: Stores the html file.
+- static: stores the css style files.
 
 Acknowledgments
 1. KaggleX BIPOC Mentorship Program.
